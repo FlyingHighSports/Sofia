@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flying High</title>
+    </head>
+    <body>
+    <style>
+        body {
+            background-color:rgb(245, 245, 245);
+            font-family:"Times New Roman", Times, serif;
+            width: 100%;
+        }
+        #title {
+            color:rgb(7, 59, 92);
+            font-size:100px;
+            margin-top: 80px;
+            position:fixed;
+            left: 35%;
+	
+            z-index:2;
+        }
+        #image1 {
+            position:fixed;
+            width:100%;
+            height: 35%;
+            z-index:1;
+	          top: 0px;
+	          left: 0px;
+        }
+        
+        #contents {
+          position: fixed;
+          top: 290px;
+          left: 0px;
+          width: 100%;
+          background-color: rgb(7, 59, 92);
+          z-index:1;
+        }
+        a {
+          color: white;
+        }
+        
+        a:hover {
+          color:black;
+        }
+        
+        a:visited {
+          color: grey;
+        }
+        nav ul {
+          margin: 0px;
+          padding: 5px 0px 15px 250px;
+          color: white;
+        }
+        nav li {
+          display: inline;
+          margin-right: 200px;
+          color: white;
+          font-size: 22px;
+        }
+        .about-us {
+          background-color:rgba(211, 228, 240);
+          width: 100%;
+          position: relative;
+            top: 310px;
+            right: 80px;
+          padding-right: 100px;
+        }
+        
+        .our-team {
+          background-color:rgba(211, 228, 240);
+          width: 100%;
+          position: relative;
+            top: 310px;
+            right: 80px;
+            padding-right: 100px;
+          padding-top: 10px;
+        }
+        
+        .activities {
+          background-color:rgba(211, 228, 240);
+          width: 100%;
+          position: relative;
+            top: 310px;
+            right: 80px;
+            padding-right: 100px;
+          padding-top: 10px;
+        }
+        
+        .titles {
+            font-size: 50px;
+            text-align:right;
+            
+        }
+        
+        .texts {
+            text-align: left;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+            
+        }
+        
+        #about-us {
+          background-color:rgba(211, 228, 240)
+          position: relative;
+            text-align: left;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+          padding-left: 150px;
+          padding-top: 50px;
+          padding-bottom: 120px;
+          
+        }
+        
+        #logo {
+          float: right;
+          margin: -80px 10px 50px 250px;
+          opacity:0.8;
+        }
+        
+        #our-team1 {
+          background-color:rgba(211, 228, 240)
+          position: relative;
+            text-align: center;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+          padding-left: 130px;
+          padding-top: -100px;
+          width: 60%;
+          line-height: 1.5em;
+          padding-bottom: 100px;
+        }
+        
+        #sofia-silva {
+          opacity:0.8;
+        }
+        
+        #our-team2 {
+          background-color:rgba(211, 228, 240)
+          position: relative;
+            text-align: center;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+          padding-left: 650px;
+          padding-top: -100px;
+          width: 60%;
+          line-height: 1.5em;
+          padding-bottom: 100px;
+        }
+        
+        #sofia-silva {
+          opacity:0.8;
+        }
+        
+        h4 {
+            background-color: rgb(7, 59, 92,0.7);
+            color:rgb(222, 222, 222);
+            text-align:center;
+            position: relative;
+            top: 340px;
+            padding: 100px;
+            line-height: 5em;
+        }
+        
+        #activities {
+          position: relative;
+          width: 100%;
+          left: 70px;
+          top: 20px;
+          background-color: rgb(54, 72, 107);
+        }
+        
+       .ulist {
+         margin: 0px;
+          padding: 0px 10px 15px 50px;
+          color: white;
+          background-color: rgb(54, 72, 107);
+          opacity: 0.5;
+        }
+        
+       .list {
+          display: inline;
+          margin-right: 80px;
+          color: white;
+          font-size: 22px;
+          background-color: rgb(54, 72, 107);
+          opacity: none;
+        }
+        
+        #text-paragliding {
+          background-color:rgba(211, 228, 240)
+          position: relative;
+            text-align: left;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+          padding-left: 150px;
+          padding-top: 50px;
+          line-height: 1.5em;
+          
+        }
+        
+        #paragliding {
+          float: right;
+          margin-top: 20px;
+          padding-left: 20px;
+          opacity:0.8;
+        }
+        
+        #text-paratrike {
+          background-color:rgba(211, 228, 240)
+          position: relative;
+            text-align: left;
+            font-size:20px;
+            color:rgb(82, 82, 82);
+          padding-left: 150px;
+          padding-top: 50px;
+          line-height: 1.5em;
+          
+        }
+        
+        #paratrike {
+          float: left;
+          opacity:0.8;
+          padding-right: 40px;
+          padding-top: 50px;
+        }
+    </style>
+    <h1 id="title"> Flying High</h1>
+    <img id="image1" src="https://www.kasandbox.org/programming-images/landscapes/clouds-from-plane.png" alt="Cloud Sky" width= "90%" height= "150px">
+      <nav id="contents">
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Our Team</a></li>
+        <li><a href="">Activities</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </nav>
+    
+    <div class="about-us">
+    <h3 class="titles">
+       <br>
+        About Us
+        <p id="about-us">
+          <img id="logo" src="https://s3-us-east-2.amazonaws.com/designevo/projects/uid-1531765/83858c1f9c54f97bfbd1368c39cf2534/preview.png?t=1586731954453" alt="Logotipo" width= "450px">
+          <br>
+          Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira Ana Catarina da Silva Oliveira.
+           </p>
+    </h3>
+    </div>
+    
+    <div class="our-team">
+    <h3 class="titles">
+        Our Team
+      <p id="our-team1">
+        <img id="sofia-silva" src="https://pbs.twimg.com/media/ENyaHR6W4AAtyVo.jpg" alt="sofia silva" width= "350px">
+          <br>
+          <br>
+          SOFIA SILVA
+          <br>
+          <br>
+          Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva.
+           </p>
+           
+           <p id="our-team2">
+        <img id="sofia-ferreira" src="https://pbs.twimg.com/media/ENyaHR6W4AAtyVo.jpg" alt="sofia silva" width= "350px">
+          <br>
+          <br>
+          SOFIA FERREIRA
+          <br>
+          <br>
+          Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva Sofia Alexandra Castor Silva.
+           </p>
+       
+    </h3>
+    </div>
+    
+    <div class= "activities">
+    <h3 class="titles">
+        Activities
+        <nav id="activities">
+      <ul class="ulist">
+        <li class="list"><a href="">Paragliding</a></li>
+        <li class="list"><a href="">Paratrike</a></li>
+        <li class="list"><a href="">Skydive</a></li>
+        <li class="list"><a href="">Soft Coasteering</a></li>
+        <li class="list"><a href="">Hang Gliding</a></li>
+        <li class="list"><a href="">Balloonist</a></li>
+        <li class="list"><a href="">Glider</a></li>
+      </ul>
+    </nav>
+        <p id="text-paragliding">
+         <img id="paragliding" src="https://pbs.twimg.com/profile_images/1103530317233631233/njYbO6FW_400x400.png" alt="Logotipo" width= "350px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">PARAGLIDING</b>
+          <br>
+          <br>
+          Experience the feeling of freedom in the company of an experienced and accredited pilot. See from above the beautiful landscapes, feel the wind and smell the clouds with the birds for company. Share the space with other paragliders flowing with them in the blue of the sky, on a huge palette of colors. The flight will be made in a two-way paraglider, always in the company of a pilot accredited by FPVL, with all the necessary equipment to do the flight baptisms. It is recommended to all participants, take warm and comfortable clothes, mountain boots or similar.
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+           <p id="text-paratrike">
+         <img id="paratrike" src="https://res.cloudinary.com/odisseias/image/upload/w_450,c_limit,f_auto,q_auto/img/promos/flytime-voo-de-paratrike-vista-terra.jpg" alt="Logotipo" width= "400px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">PARATRIKE</b>
+          <br>
+          <br>
+          During a bi-rent flight in Paratrike you can take your feet off the ground and live this unique experience! Paratrike is a paragliding mode made with a rigid and motor structure, which allows greater comfort and control throughout the flight. After a short briefing on the flight and equipment, the adrenaline starts with the gentle start up the runway until you feel the ground escape and start flying.
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+           <p id="text-paragliding">
+         <img id="paragliding" src="https://66.media.tumblr.com/5ce235860abd9ac52ba5d0d1efce4263/tumblr_o3modiLqUP1sp7sfwo1_1280.jpg" alt="Logotipo" width= "350px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">SKYDIVE</b>
+          <br>
+          <br>
+          Skydiving is very easy. You'll wear a costume, followed by a theoretical presentation of the activity (briefing) for 5 to 10 minutes so you can finally be ready to get on the plane. When you reach your chosen altitude, you'll jump with the very experienced instructor, who will be using equipment designed to take two people. The free fall will allow you to have the feeling of flying in the skies of alentejo, reaching a speed of about 200km/h. When you open the parachute, you will feel a lightness in both the body and soul!
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+             <p id="text-paratrike">
+         <img id="paratrike" src="https://static.lifecooler.com/images/fotos/imgdesconto_142618_34.jpg" alt="Logotipo" width= "400px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">SOFT-COASTEERING</b>
+          <br>
+          <br>
+         Soft Coasteering  or in other words «Flying Into Water», is a multiactivity, since it encompasses, Trekking, Swimming, Caving, Small Climbing (no need for ropes) and Jumps to the Sea... In fact, many jumps to the crystal clear waters of the coast of Serra da Arrábida.The experienced instructors will ensure the best safety conditions for an unforgettable experience!
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+            <p id="text-paragliding">
+         <img id="paragliding" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Hang_gliding_hyner.jpg" alt="Logotipo" width= "350px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">HANG-GLIDING</b>
+          <br>
+          <br>
+          See from above the beautiful landscapes, feel the wind and smell the clouds with the birds by company. Share the space with other paragliders flowing with them in the blue of the sky, on a huge palette of colors. Enjoy the calm provided by this moment.
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+             <p id="text-paratrike">
+         <img id="paratrike" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBjlyXmrCwsRi56UUYtqkPQb1xSymkKwhne8JZkThe8EYLBObv&usqp=CAU" alt="Logotipo" width= "400px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">BALLOONISM</b>
+          <br>
+          <br>
+         Set out to discover the city invicta, a World Heritage Site where the past and the future merge, and continue to rise. Observe the Douro River, land of wine and vineyards, and traverse landscapes of narrow ravines and majestic mountains, natural parks and hermitages punctuated with castles, shrines and granite villages. Explore the best of this authentic Portugal.
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+           
+           <p id="text-paragliding">
+         <img id="paragliding" src="https://i.stack.imgur.com/2z82c.jpg" alt="Logotipo" width= "350px">
+          <br>
+          <b style="font-size:24px; color:rgb(7, 59, 92);">GLIDER</b>
+          <br>
+          <br>
+          Come experience this feeling of freedom, in the company of an experienced and accredited pilot. Meet and see from above the beautiful landscapes, feel the wind and smell the clouds with the birds for company. Share space with other beings, flowing with them in the blue of the sky, in an immense palette of colors. Experience this great thrill of flying.
+          <br>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">LOCATION:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PAX:</b>
+          <br>
+          <b style="font-size: 18px; color:rgb(7, 59, 92);">PRICE:</b>
+           </p>
+    </h3>
+    </div>
+    
+    <h4>
+        Contacts
+        <nav id="contacts">
+        <ul>
+        <li><a href=""> <img  src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="Instagram" width= "40px"></a></li>
+        
+        <li><a href=""> <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1024px-Facebook_logo_36x36.svg.png" alt="Facebook" width= "40px"></a></li>
+        
+        <li><a href=""><img  src="https://pluspng.com/img-png/email-icon-png-download-icons-logos-emojis-email-icons-2400.png" alt="Email" width= "40px"></a></li>
+        
+        <li><a href=""><img  src="https://image.flaticon.com/icons/png/512/152/152851.png" alt="Phone" width= "40px"></a></li>
+      </ul>
+      </nav>
+    </h4>
+</html>
